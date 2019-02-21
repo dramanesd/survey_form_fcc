@@ -113,6 +113,10 @@ body {
   padding: 2.5em;
 }
 
+.section2-right-box div.role-label {
+  margin-top: 0.5em;
+}
+
 .section2-right-box div.rating-label {
-  margin-top: 4.5em;
+  margin-top: 3.7em;
 }
