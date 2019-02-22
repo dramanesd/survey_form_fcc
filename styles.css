@@ -4,7 +4,7 @@
 }
 
 .green-box {
-  width: 400px;
+  width: 370px;
   background-color: #e8ffeb;
   margin: 0 auto;
   padding: 15px;
@@ -119,4 +119,88 @@ body {
 
 .section2-right-box div.rating-label {
   margin-top: 3.7em;
+}
+
+.section3 {
+  margin-top: 3em;
+}
+
+.section3 .like-label {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10em;
+}
+
+.section3 .green-box2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 450px;
+  height: 330px;
+  background-color: #e8ffeb;
+  margin-bottom: -25em;
+  margin-left: 1em;
+}
+
+.section3 .like-option {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 17em;
+  margin-top: -0.5em;
+}
+
+.section3 .prefer-label {
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2em;
+  margin-top: 3em;
+}
+
+.section3 .preferences {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12em;
+  margin-top: -3.3em;
+}
+
+.section4 {
+  margin-top: 3em;
+}
+
+.section4 .comments-label {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 11em;
+  margin-top: 5em;
+  margin-bottom: -3em;
+}
+
+.section4 .comments-field {
+  width: 370px;
+  background-color: #e8ffeb;
+}
+
+.section4 .comments-field textarea {
+  margin-left: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 3em 0;
+  background-color: #008c0e;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.submit-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
