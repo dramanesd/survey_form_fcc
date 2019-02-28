@@ -1,22 +1,47 @@
-/*  Global */
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .text-center {
   text-align: center;
 }
 
-.green-box {
-  width: 370px;
-  background-color: #e8ffeb;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-/* Global end */
-
-body {
-  margin: 0;
-  padding: 0;
+html {
   color: #707070;
 }
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.left-box {
+  width: 500px;
+  padding: 2em;
+}
+
+.right-box {
+  width: 500px;
+  padding: 2em;
+}
+
+.green-bg {
+  width: 500px;
+  height: auto;
+  background-color: #e8ffeb;
+}
+
+ul>li {
+  list-style: none;
+}
+
+/* End General Styles */
 
 .top-bar {
   width: 100%;
@@ -39,46 +64,35 @@ body {
   margin-bottom: 2em;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.section1 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .user-icon {
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: auto;
-  flex-grow: 1;
-  background-color: #ececec;
-}
-
-.user-info {
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: auto;
-  flex-grow: 2;
+  background-color: #ececec;
 }
 
-.user-info label {
-  display: block;
-  align-self: flex-start;
+.user-icon img {
+  width: 7em;
+}
+
+.user-info {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em;
+}
+
+.user-info label,
+user-info input {
+  margin-top: 0.5em;
 }
 
 .form-field {
-  width: 250px;
+  width: 100%;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -92,106 +106,76 @@ body {
   outline: none;
 }
 
-.section2 {
-  display: flex;
-  flex-direction: row;
+.section-2>.left-box>.role-label,
+.section-2>.left-box>.rating-label {
+  display: none;
 }
 
-.section2-left-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 2.5em;
-}
-
-.section2-left-box div.radio-group {
+.radio-group {
   margin-top: 2em;
 }
 
-.section2-right-box {
-  padding: 2.5em;
+.radio-group ul li {
+  text-align: end;
 }
 
-.section2-right-box div.role-label {
-  margin-top: 0.5em;
-}
-
-.section2-right-box div.rating-label {
-  margin-top: 3.7em;
-}
-
-.section3 {
-  margin-top: 3em;
-}
-
-.section3 .like-label {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 10em;
-}
-
-.section3 .green-box2 {
+.radio-group ul li label {
   display: flex;
   justify-content: flex-end;
-  width: 450px;
-  height: 330px;
-  background-color: #e8ffeb;
-  margin-bottom: -25em;
-  margin-left: 1em;
+  align-items: center;
 }
 
-.section3 .like-option {
+.radio-group ul li label input {
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.rating-label {
+  margin-top: 2.5em;
+}
+
+select#dropdown {
+  display: block;
+  width: 100%;
+}
+
+.preferences {
+  margin-top: 2em;
+}
+
+.preferences ul li label {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 17em;
-  margin-top: -0.5em;
+  align-items: center;
 }
 
-.section3 .prefer-label {
-  text-align: right;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 2em;
-  margin-top: 3em;
+.preferences ul li label input {
+  margin-right: 8px;
+  margin-top: 2px;
 }
 
-.section3 .preferences {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 12em;
-  margin-top: -3.3em;
+.like-label {
+  text-align: end;
 }
 
-.section4 {
-  margin-top: 3em;
+.prefer-label {
+  text-align: end;
+  margin-top: 2.5em;
 }
 
-.section4 .comments-label {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 11em;
-  margin-top: 5em;
-  margin-bottom: -3em;
+.section-3>.right-box>.like-label,
+.section-3>.right-box>.prefer-label {
+  display: none;
 }
 
-.section4 .comments-field {
-  width: 370px;
-  background-color: #e8ffeb;
-}
-
-.section4 .comments-field textarea {
-  margin-left: 5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+.section-4>.left-box>.comments-label {
+  display: none;
 }
 
 .btn {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin: 3em 0;
   background-color: #008c0e;
   border: none;
   border-radius: 3px;
@@ -203,4 +187,85 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Media query styles */
+
+/* Tablet styles */
+@media only screen and (min-device-width: 500px) and (max-device-width: 800px) {
+  .rating-label {
+    margin-top: 1.5em;
+  }
+
+  section {
+    padding: 20px 50px;
+    display: fl
+  }
+
+  .prefer-label {
+    text-align: end;
+    margin-top: 2.5em;
+  }
+}
+
+/* Phone styles */
+@media only screen and (max-device-width: 500px) {
+  section {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-icon img {
+    width: 3em;
+    margin: 1em 0;
+  }
+
+  .section-2>.right-box,
+  .section-2>.right-box {
+    display: none;
+  }
+
+  .section-2>.left-box>.role-label,
+  .section-2>.left-box>.rating-label {
+    display: block;
+  }
+
+  .role-label {
+    margin-bottom: 1em;
+  }
+
+  .radio-group ul li label {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .section-3>.left-box,
+  .section-3>.left-box {
+    display: none;
+  }
+
+  .section-3>.right-box>.like-label,
+  .section-3>.right-box>.prefer-label {
+    display: block;
+  }
+
+  .like-label {
+    margin-bottom: 1em;
+  }
+
+  .prefer-label {
+    text-align: start;
+  }
+
+  .section-4>.left-box>.comments-label {
+    display: block;
+    margin-bottom: 1.5em;
+  }
+
+  .section-4>.right-box {
+    display: none;
+  }
 }
